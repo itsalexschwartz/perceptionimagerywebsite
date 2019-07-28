@@ -1,0 +1,7 @@
+body { background: #d2d5d8 url(../images/bg_td_slide.gif) repeat-x left top; margin: 0; padding: 0; }
+.td_content_slide_landscape { padding: 38px 20px; border-right: 1px solid #d2d6d9; border-left: 1px solid #d2d6d9; display: table-cell; }
+.td_content_slide_portrait { padding: 21px 34px; border-right: 1px solid #d2d6d9; border-left: 1px solid #d2d6d9; display: table-cell; }
+a.imagelink:link { display: block; border: solid 2px #1e2f0e; opacity: 0.1; }
+a.imagelink:visited { display: block; border: solid 2px #1e2f0e; outline: solid 2px #c3c8cd; opacity: 1.0; }
+a.imagelink:hover { display: block; border: solid 2px #fff; outline: solid 2px #c3c8cd; opacity: 1.0; }
+a.imagelink:active { display: block; border: solid 2px #fff; opacity: 1.0; }
