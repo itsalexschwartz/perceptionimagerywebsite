@@ -14,14 +14,26 @@
 		    var GB_ROOT_DIR = "css/greybox/";
 		</script>
 		<script type="text/javascript" src="css/greybox/AJS.js"></script>
-    <script type="text/javascript" src="js/jquery.js"></script>
 		<script type="text/javascript" src="css/greybox/gb_scripts.js"></script>
 		<link href="css/greybox/gb_styles.css" rel="stylesheet" type="text/css" />
 
+    <script type="text/javascript" src="js/jquery.js"></script>
     <script>
     $(function(){
       $("#footerinclude").load("footer.html");
     });
+    </script>
+
+    <script>
+    var random_images_array = ['1.png', '2.png', '3.png', '4.png', '5.png', '6.png', '7.png', '8.png', '9.png', '10.png', '11.png', '12.png', '13.png', '14.png'];
+
+    function getRandomImage(imgAr) {
+      path = 'rotatepics/';
+      var num = Math.floor( Math.random() * imgAr.length );
+      var img = imgAr[ num ];
+      var imgStr = '<img src="' + path + img + '" alt = "">';
+      document.write(imgStr); document.close();
+    }
     </script>
 
 	</head>
@@ -100,9 +112,7 @@
 				<td class="td1_content_home" align="center" height="300">&nbsp;</td>
 				<td class="td2_content_home" align="center" width="900" height="300">
 
-
-					<img src="rotatepics/rotator.php" alt="Pan 1" height="300" width="900" border="0">
-
+      <script type="text/javascript">getRandomImage(random_images_array);</script>
 
 				</td>
 				<td class="td3_content_home" align="center" height="300">&nbsp;</td>

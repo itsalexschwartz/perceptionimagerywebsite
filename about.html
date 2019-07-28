@@ -18,7 +18,14 @@
 		<script type="text/javascript" src="css/greybox/AJS.js"></script>
 		<script type="text/javascript" src="css/greybox/gb_scripts.js"></script>
 		<link href="css/greybox/gb_styles.css" rel="stylesheet" type="text/css" />
-		<script type="text/javascript" src="include.js"></script>
+
+    <script type="text/javascript" src="js/jquery.js"></script>
+    <script>
+    $(function(){
+      $("#footerinclude").load("footer.html");
+    });
+    </script>
+
 	</head>
 
 	<body leftmargin="0" marginheight="0" marginwidth="0" topmargin="0">
@@ -173,7 +180,7 @@
 				<!--               -->
 				<!--    Footer	  -->
 				<!--               -->
-				<div data-include="footer.html"></div>
+				<div id="footerinclude"></div>
 
 
 
